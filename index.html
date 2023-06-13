@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>King GSM</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="téléchargement.png" alt="Unlock-King GSM Logo">
+    <h1>Welcome to King GSM</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+        <li><a href="#" onclick="navigateTo('register')">Register</a></li>
+        <li><a href="#" onclick="navigateTo('login')">Login</a></li>
+        <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="homeSection">
+      <h2>Unlock Your Phone with Ease</h2>
+      <p>Welcome toKing GSM! We provide professional unlocking services for all types of mobile phones You are now in the right place, decode all phones in less than an hour.  We have a lot of services, and there will be a discount for those who deal with us in large quantities.</p>
+      <img src="unnamed.png" alt="Unlock-King GSM Image">
+      <img src="IMG_20230605_215358_075.jpg" alt="unlock-king GSM Image">
+      <img src="images.png" alt="unlock-king GSM image">
+    </section>
+
+    <section id="registerSection" style="display: none;">
+      <h2>Create an Account</h2>
+      <form id="registerForm" onsubmit="return false;">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            
+            <option value="country1">Afrique du Sud</option>
+            <option value="country2">Afghanistan</option>
+            <option value="country3">Albanie</option>
+             <option value="country1">Algérie</option>
+            <option value="country2">Allemagne</option>
+            <option value="country3">Australie</option>
+             <option value="country1">Bangladesh</option>
+            <option value="country2">Bahreïn</option>
+            <option value="country1">Chine</option>
+            <option value="country2">Colombie</option>
+            <option value="country3">États-Unis</option>
+             <option value="country1">Égypte</option>
+            <option value="country2">Danemark</option>
+            <option value="country3">Émirats arabes unis</option>
+             <option value="country1">Espagne</option>
+            <option value="country2">Finlande</option>
+            <option value="country3">France</option>
+             <option value="country1">Irlande</option>
+            <option value="country2">Italie</option>
+            <option value="country3">Koweït</option>
+             <option value="country1">Libye</option>
+            <option value="country2">Luxembourg</option>
+            <option value="country3">Tunisie</option>
+             <option value="country1">Turquie</option>
+            <option value="country2">Tuvalu</option>
+            <option value="country3">Ukraine</option>
+             <option value="country1">Yémen</option>
+            <option value="country2">Zambie</option>
+            <option value="country3">Zimbabwe</option>
+            
+  </select>
+        </div>
+
+        <div class="form-group">
+          <label for="captcha">Captcha:</label>
+          <input type="text" id="captcha" name="captcha" required>
+          <!-- Add the captcha validation logic here -->
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section id="loginSection" style="display: none;">
+      <h2>Login</h2>
+      <form id="loginForm" onsubmit="return false;">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="contactSection" style="display: none;">
+      <h2>Contact Us</h2>
+      <p>Please fill out the form below to contact us.</p>
+      <form id="contactForm" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2023 by Aymen barkaoui. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body
